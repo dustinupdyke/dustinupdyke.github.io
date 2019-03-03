@@ -1,0 +1,47 @@
+# Build settings
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+root: /
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+include: [_include]
+
+
+
+# SEO settings
+title: Dustin Updyke
+description: "Questioning most things most of the time"
+keywords: "Dustin Updyke"
+url: http://updyke.com
+
+# Author settings
+author:
+  name: Dustin Updyke
+  job: Cybersecurity Researcher, Software Engineer
+  bio: "@ Carnegie Mellon University"
+  thumb: /images/author.jpg
+  email: dustin@updyke.com.com
+  url: http://updyke.com/
+  github: https://github.com/dustinupdyke
+  twitter: https://twitter.com/dustinupdyke
+  facebook: https://facebook.com/dustinupdyke
+  linkedin: https://linkedin.com/in/dustinupdyke
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: icons
+    title: Icons
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
